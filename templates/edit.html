@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deen TODO LIST</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/styles.css'}}">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+</head>
+<body>
+    <h1>TODO LIST</h1>
+    <form action="{{url_for('edit', home=home)}}" method="post">
+        <input type="text" name="todo" value="{{todo['task']}}">
+        <button type="submit">Save</button>
+    </form>
+    
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/all.min.js"></script>
+    <script src="/js/fontawesome.min.js"></script>
+</body>
+</html>
